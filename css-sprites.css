@@ -1,0 +1,28 @@
+.animal-dog_grey
+{
+background:url('css-sprite-combined.png') -0px 0px;
+width:150px;height:100px;
+display:inline-block;
+}
+
+.animal-dog
+{
+background:url('css-sprite-combined.png') -0px -100px;
+width:150px;height:100px;
+display:inline-block;
+}
+
+.animal-fish_grey
+{
+background:url('css-sprite-combined.png') -0px -200px;
+width:150px;height:100px;
+display:inline-block;
+}
+
+.animal-fish
+{
+background:url('css-sprite-combined.png') -0px -300px;
+width:150px;height:100px;
+display:inline-block;
+}
+
