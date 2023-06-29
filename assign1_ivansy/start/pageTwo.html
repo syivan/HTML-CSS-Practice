@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ivan Sy">
+    <meta name="description" content="Art Store">
+    <title>Assignment 1 - Page 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="#">My Account</a>
+        <a href="#">Wish List</a>
+        <a href="#">Shopping Cart</a>
+        <a href="#">Checkout</a>
+    </div>
+
+    <div class="store-header">
+        <h1>Art Store</h1>
+    </div>
+
+    <div class="main-content-cr">
+        <form action="http://faculty.washington.edu/ealmasri/assign1.php" method="POST">
+            <h1>Customer Registration</h1>
+            <h4>1. User Info</h4>
+            <hr>
+            <table class="user-info">
+                <tr>
+                    <td>First Name:</td>
+                    <td>Last Name:</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="first" required></td>
+                    <td><input type="text" name="last" required></td>
+                </tr>
+                    <td>Email:</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="email" size="35" required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>Password Repeat</td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="pass1" placeholder="7 or more characters" pattern=".{7,}" required></td>
+                    <td><input type="password" name="pass2" pattern=".{7,}" required></td>
+                </tr>
+            </table>
+            <h4>2. Location</h4>
+            <hr>
+            <table class="location-info">
+                <tr class="bold">
+                    <td>Address:</td>
+                </tr>
+                <tr class>
+                    <td><input type="text" name="address" size="35" required></td>
+                </tr>
+                <tr class="bold">
+                    <td>City</td>
+                    <td>State</td>
+                    <td>Zip</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="city" required></td>
+                    <td><input type="text" name="state" size="5" pattern="[A-Za-z]{2}" required></td>
+                    <td><input type="text" name="zip" size="5" required></td>
+                </tr>
+                <tr class="bold">
+                    <td>Phone</td>
+                    <td>Country</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="phone" placeholder="XXX-XXX-XXXX"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></td>
+                    <td>
+                        <select name="country">
+                            <option>United States</option>
+                            <option>Canada</option>
+                            <option>Mexico</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="bold">
+                    <td>Continent</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><input type="radio" name="continent" value="Africa">Africa<br></label>
+                        <label><input type="radio" name="continent" value="Antarctica">Antarctica<br></label>
+                        <label><input type="radio" name="continent" value="Asia">Asia<br></label>
+                        <label><input type="radio" name="continent" value="Australia">Australia<br></label>
+                        <label><input type="radio" name="continent" value="Europe">Europe<br></label>
+                        <label><input type="radio" name="continent" value="North America" checked>North America<br></label>
+                        <label><input type="radio" name="continent" value="South America">South America<br></label>
+                    </td>
+                </tr>
+            </table>
+
+
+            <h4>3. Personal Details</h4>
+            <hr>
+            <table class="personal-details">
+                <tr class="bold">
+                    <td>Birth Day</td><td></td>
+                    <td>Favorite Color</td>
+                </tr>
+                <tr>
+                    <td class><input type="date" name="birthday" required></td><td></td>
+                    <td><input type="color" name="favorite"></td>
+                </tr>
+                <tr class="bold">
+                    <td>Interest In Art</td>
+                </tr>
+                <tr>
+                    <td>Minimal <input type="range" min="0" max="100" step="1" name="interest"> Love it!</td>
+                </tr>
+            </table>
+
+            <h4>4. All Done</h4>
+            <hr>
+            <label class="bold"><input required type="checkbox" name="accept"> I agree to the <a href="#" class="blue-mark">Terms of the Site</a></label>
+            <div class="btn-id">
+                <button type="submit" name="submit-btn"><img src="images/button_ok.png">Sign me up!</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>All images are copyright to their owners. This is just a hypothetical site &copy; 2014. Copyright Art Store</p>
+    </footer>
+</body>
+</html>
